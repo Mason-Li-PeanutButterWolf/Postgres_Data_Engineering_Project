@@ -8,11 +8,11 @@ def create_database():
     - Returns the connection and cursor to sparkifydb
     """
     
-    # connect to default database
+    # connect to default database. Change the connection string to the one of your databse.
     conn = conn = psycopg2.connect(host="localhost",
                                     database="postgres",
                                     user="postgres",
-                                    password="Ban3duwe")
+                                    password="password")
     conn.set_session(autocommit=True)
     cur = conn.cursor()
     
