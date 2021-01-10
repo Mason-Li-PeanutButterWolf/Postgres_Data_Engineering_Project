@@ -84,10 +84,11 @@ def process_data(cur, conn, filepath, func):
 
 
 def main():
+    #change the connection string to the one of your database
     conn = conn = psycopg2.connect(host="localhost",
                                 database="sparkifydb",
                                 user="postgres",
-                                password="Ban3duwe")
+                                password="password")
     # conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student")
     cur = conn.cursor()
 
