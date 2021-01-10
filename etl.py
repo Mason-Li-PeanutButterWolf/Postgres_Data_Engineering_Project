@@ -91,7 +91,8 @@ def main():
                                 password="password")
     # conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student")
     cur = conn.cursor()
-
+    
+    #change the file directory to your local directory.
     process_data(cur, conn, filepath='D:\data_engineering_project\Data_Modeling_Postgres\data\song_data', func=process_song_file)
     process_data(cur, conn, filepath='D:\data_engineering_project\Data_Modeling_Postgres\data\log_data', func=process_log_file)
 
