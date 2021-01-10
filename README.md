@@ -1,6 +1,8 @@
-# Sparkify Database ETL with Postgres
+# Data Engineering Project For Song Streaming APP (Python, SQL, Postgres)
 
-The purpose of this project is to provide a database solution for Sparkify to analyse their song and user activity data. The following was created:
+This project is a data engineering solution for a popular music streaming app to store, analyse and gather insight from its user activity data.The project aims to understand what songs users are listenint to. The challenge of the company is the lack of a easy way to query their data that are stored purely in JSON format.
+
+In this project, as the lead data engineer, I created a postgres database with tables designed to optimize queries on song play analysis. To achieve this, 4 fact tables that contained detailed inforamtion on sers, songs, artist and time of play are put in place to reduce data replication. Along side a fact table called 'ongplays'
 
   * An ETL pipeline was developed to move data into a Postgres database
   * A star schema is used to optimise data write times by reducing duplicate data entries
