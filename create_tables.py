@@ -30,7 +30,7 @@ def create_database():
     conn = conn = psycopg2.connect(host="localhost",
                                     database="sparkifydb",
                                     user="postgres",
-                                    password="Ban3duwe")
+                                    password="password")
     cur = conn.cursor()
     
     return cur, conn
