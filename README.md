@@ -1,10 +1,12 @@
-# Data Engineering Project For Song Streaming APP 
+# Data Modeling with Postgres DB and Apache Cassandra
 
-Tech Stack: Python, SQL, Postgres
+Tech Stack: Python, SQL, Postgres, Apache Cassandra
 
 This project is a data engineering solution for a popular music streaming app to store, analyze and gather insight from its user activity data.The project aims to understand what songs users are listening to. The challenge of the company is the lack of an easy way to query their data that are stored purely in JSON format.
 
 In this project, as the lead data engineer, I created a postgres database with tables designed to optimize queries on song play analysis. To achieve this, 4 fact tables that contained detailed inforamtion on users, songs, artist and time of play are put in place to reduce data replication. Alongside a fact table called 'songplays', the 5 tables make up a star schema design to simplify queries and improve aggregation speed. 
+
+The business team needs to find answers on questions such as "who are the users that listened to a particular song for the past month?" and "what songs are played in a particular session" one the daily basis. To optimize query time for our data, Apache Cassandra was chosen as the NoSQL database to further process and store the player log data.
 
 ## Source Data
 
